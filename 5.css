@@ -1,0 +1,206 @@
+/* Reset some default styles for better cross-browser consistency */
+body, h1, h2, p, ul, li, form, label, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header and Navbar styling */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Search container styling */
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input {
+    padding: 5px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-container button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background: #555;
+    color: #fff;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background: #777;
+}
+
+/* Burger menu styling */
+.burger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Main content styling */
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+section {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+section p {
+    margin-bottom: 10px;
+}
+
+/* Form styling */
+form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #555;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer p {
+    color: #666;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: #333;
+    }
+    .nav-links li {
+        margin: 0;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .nav-links li a {
+        padding: 15px;
+        display: block;
+    }
+    .burger {
+        display: flex;
+    }
+}
+
+.nav-active {
+    display: flex;
+}
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 0;
+    text-align: center;
+}
+
+.footer-links a, .social-media a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.social-media a {
+    display: inline-block;
+    margin-top: 10px;
+}
